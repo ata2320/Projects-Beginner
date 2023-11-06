@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Heebo:wght@400;500&family=Roboto&family=Ubuntu&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Heebo", sans-serif;
+  height: 100vh;
+}
+
+.head-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-list-items {
+  display: flex;
+  flex-direction: row;
+  /* buraya justify-content ekleyerek boşluk vermek istedim ama çalıştıramadım */
+  gap: 30px;
+  margin-right: 60px;
+  margin-top: 27px;
+  list-style-type: none;
+}
+.item a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #21243d;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap-reverse; /* responsive olduğunda görüntünün yukarıda belirebilmesi için */
+  justify-content: space-around;
+  padding: 210px 150px 70px 150px;
+}
+
+.left-side {
+  display: flex;
+  flex-flow: wrap;
+  max-height: 300px;
+  max-width: 500px;
+}
+
+.left-side h1 {
+  font-size: 44px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.left-side button {
+  width: 210px;
+  height: 45px;
+  border: 1px solid #ff6464;
+  font-size: 20px;
+  background-color: #ff6464;
+  margin: 40px 0 70px 0;
+}
+
+.left-side p {
+  text-align: justify;
+}
+
+.left-side button a {
+  color: white;
+  text-decoration: none;
+}
+
+.right-side img {
+  border-radius: 243px;
+}
+
+.posts-container {
+  background-color: #edf7fa;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* .view {
+            burayı sağ tarafa kaydırmadım. Flex denedim.
+           } */
+
+.box {
+  height: 300px;
+  width: 420px;
+  background-color: #fff;
+  padding: 25px;
+}
+
+.box h1 {
+  margin-bottom: 17px;
+  font-size: 26px;
+}
+
+.box-date {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 55px;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  margin-bottom: 26px;
+}
+
+.address {
+  margin-bottom: 55px;
+}
+
+.works-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.img-dashboard {
+  padding: 100px 0 15px 140px;
+}
+
+.context-dashboard {
+  padding: 100px 0 0 10px;
+}
+
+.year-title {
+  display: flex;
+  gap: 30px;
+}
+
+.side_title {
+  font-size: 20px;
+  color: #8695a4;
+  margin: 10px 0 10px 0;
+}
+
+.context-dashboard .year {
+  display: inline-block;
+  border: 1px solid #142850;
+  border-radius: 15px;
+  padding: 2px;
+  width: 60px;
+  height: 30px;
+  text-align: center;
+  color: #fff;
+  background-color: #142850;
+  font-weight: bold;
+  margin: 10px 0 10px 0;
+}
+
+.context-dashboard .content {
+  line-height: 2;
+}
+
+.portrait {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.img-portrait {
+  padding: 100px 0 15px 140px;
+}
+
+.context-portrait {
+  padding: 100px 0 0 10px;
+}
+
+.context-portrait .year {
+  display: inline-block;
+  border: 1px solid #142850;
+  border-radius: 15px;
+  padding: 2px;
+  width: 60px;
+  height: 30px;
+  text-align: center;
+  color: #fff;
+  background-color: #142850;
+  font-weight: bold;
+  margin: 10px 0 10px 0;
+}
+
+.context-portrait .content {
+  line-height: 2;
+}
+
+.mayalam {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.img-mayalam {
+  padding: 100px 0 15px 140px;
+}
+
+.context-mayalam {
+  padding: 100px 0 0 10px;
+}
+
+.context-mayalam .year {
+  display: inline-block;
+  border: 1px solid #142850;
+  border-radius: 15px;
+  padding: 2px;
+  width: 60px;
+  height: 30px;
+  text-align: center;
+  color: #fff;
+  background-color: #142850;
+  font-weight: bold;
+  margin: 10px 0 10px 0;
+}
+
+.context-mayalam .content {
+  line-height: 2;
+}
+
+.vector-line {
+  width: calc(100% - 300px);
+  margin: 0 150px; /* bu kısmı gpt den aldım. Anladığım kadarıyla width değerinin sayfanın tamamından 300px çıkarması için calc fonksiyonu yazdık. Sağ margin 150px boşluk alınca sol margin de otomatik olarak 300e tamamlamak için 150px boşluk verdi. */
+  /* aynı zamanda çıtırdan bir responsive görüntü sağladı */
+}
+
+.dashboard a,
+.portrait a,
+.mayalam a {
+  text-decoration: none;
+  color: #21243d;
+  font-size: 30px bold;
+}
